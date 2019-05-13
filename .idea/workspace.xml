@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc16c5a0-4abc-4060-8a45-263e30a7d266" name="Default Changelist" comment="Initial commit of merge sort">
-      <change afterPath="$PROJECT_DIR$/algorithms/sorting/bubble_sort.py" afterDir="false" />
+    <list default="true" id="bc16c5a0-4abc-4060-8a45-263e30a7d266" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/algorithms/sorting/bubble_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="28" column="119" selection-start-line="28" selection-start-column="119" selection-end-line="28" selection-end-column="119" />
+            <state relative-caret-position="255">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -104,6 +104,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -195,15 +196,28 @@
       <option name="project" value="LOCAL" />
       <updated>1557720874514</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bubble sort">
+      <created>1557721671458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557721671458</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dir commit">
+      <created>1557721897671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557721897671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="860" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.4993598" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" />
@@ -211,7 +225,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5012804" side_tool="true" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4987196" visible="true" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987196" visible="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -249,7 +263,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit of merge sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit of merge sort" />
+    <MESSAGE value="bubble sort" />
+    <MESSAGE value="dir commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dir commit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/algorithms/sorting/merge_sort.py">
@@ -261,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithms/sorting/bubble_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" column="119" selection-start-line="28" selection-start-column="119" selection-end-line="28" selection-end-column="119" />
+        <state relative-caret-position="255">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>
