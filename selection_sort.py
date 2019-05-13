@@ -14,11 +14,11 @@ def selectionSort(givenArray):
         At the end of that iteration, swap the elements
     '''
     for i in range(size):
-        min = i
+        minimum = i
         for j in range(i+1, size):
-            if givenArray[min] > givenArray[j]:
-                min = j
-        givenArray[i], givenArray[min] = givenArray[min], givenArray[i]
+            if givenArray[minimum] > givenArray[j]:
+                minimum = j
+        givenArray[i], givenArray[minimum] = givenArray[minimum], givenArray[i]
         
     return givenArray
 
