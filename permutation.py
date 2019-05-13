@@ -13,9 +13,10 @@
 
             cache -> {'12' : [1,2]}
 
-            This goes on until start is exhausted.
+            This goes on until start is exhausted. Collect each permutation along the calls.
 
 '''
+# Core logic
 def _permutate(end, start, cache, permutations):
     skey = ''.join([str(s) for s in start])
 
@@ -23,10 +24,12 @@ def _permutate(end, start, cache, permutations):
     if skey in cache.keys():
         p = end + cache.get(skey)
         permutations.append(p)
+    
     # Base case - if start is no more, append the flipped version and add it to permutations
     elif len(start) <= 1:
         p = end + start
         permutations.append(p)
+    
     # Recursive case - nothing above is satisfied, add the start to cache, and go into recursive calls
     else:
         cache[skey] = start
