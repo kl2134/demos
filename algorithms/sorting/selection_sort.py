@@ -1,5 +1,6 @@
 '''
-    Selection sort - find the min or max element in the array and swap it with the first element at each iteration.
+    Selection sort -
+        - Find the min or max element in the array and swap it with the first element at each iteration.
     O(n^2) time complexity
 '''
 
