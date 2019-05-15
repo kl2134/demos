@@ -1,5 +1,7 @@
 '''
     Quick sort
+        - Default pivot index is set to 0, which yields O(n^2) for already sorted arrays
+        - For optimal O, use a random pivot point
 '''
 
 def _partition(givenArray, startIndex, endIndex):
@@ -20,18 +22,22 @@ def _partition(givenArray, startIndex, endIndex):
     # Return the pivot position for further recursive calls
     return newPivotIndex-1
 
+# Handles divide-and-conquer recursive calls
+# Exit case is start > end
 def _quickSort(givenArray, start, end):
     if start < end:
         pivotIndex = _partition(givenArray, start, end)
         _quickSort(givenArray, start, pivotIndex)
         _quickSort(givenArray, pivotIndex+1, end)
 
+# Wrapper definition for users
 def quickSort(givenArray):
-
+    # Handles base case
     size = len(givenArray)
     if size <= 1:
         return givenArray
 
+    # Default pivot index is 0
     _quickSort(givenArray, 0, size)
 
     return givenArray
