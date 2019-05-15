@@ -3,6 +3,7 @@
         - Default pivot index is set to 0, which yields O(n^2) for already sorted arrays
         - For optimal O, use a random pivot point
 '''
+import random
 
 def _partition(givenArray, startIndex, endIndex):
     pivot = givenArray[startIndex]
@@ -22,11 +23,16 @@ def _partition(givenArray, startIndex, endIndex):
     # Return the pivot position for further recursive calls
     return newPivotIndex-1
 
+def _random_partition(givenArray, startIndex, endIndex):
+    randomPivot = random.randrange(startIndex, endIndex)
+    givenArray[startIndex], givenArray[randomPivot] = givenArray[randomPivot], givenArray[startIndex]
+    return _partition(givenArray, startIndex, endIndex)
+
 # Handles divide-and-conquer recursive calls
 # Exit case is start > end
 def _quickSort(givenArray, start, end):
     if start < end:
-        pivotIndex = _partition(givenArray, start, end)
+        pivotIndex = _random_partition(givenArray, start, end)
         _quickSort(givenArray, start, pivotIndex)
         _quickSort(givenArray, pivotIndex+1, end)
 
