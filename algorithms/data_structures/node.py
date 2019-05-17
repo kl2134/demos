@@ -9,7 +9,7 @@ class GraphNode(BaseNode):
         BaseNode.__init__(self, value)
         self.neighbors = []
 
-class LinkedListNode(object):
+class LinkedListNode(BaseNode):
 
     def __init__(self, value):
         BaseNode.__init__(self, value)
@@ -21,6 +21,12 @@ class BinaryTreeNode(BaseNode):
         BaseNode.__init__(self, value)
         self.left = left
         self.right = right
+
+class DoublyLinkedListNode(LinkedListNode):
+
+    def __init__(self, value):
+        LinkedListNode.__init__(self, value)
+        self.previous = None
 
 if __name__ == '__main__':
 
@@ -34,6 +40,11 @@ if __name__ == '__main__':
     llNode = LinkedListNode(1)
     assert llNode.value == 1
     assert llNode.next == None
+
+    dllNode = DoublyLinkedListNode(1)
+    assert dllNode.value == 1
+    assert dllNode.next == None
+    assert dllNode.previous == None
 
     tNode = BinaryTreeNode(1)
     assert tNode.value == 1
