@@ -74,5 +74,5 @@ if __name__ == '__main__':
     linkedList.appendLeft(LinkedListNode(2))
     linkedList.appendLeft(LinkedListNode(3))
 
-    assert linkedList.head.value == 3
+    assert linkedList.head._value == 3
     assert linkedList.size() == 3
